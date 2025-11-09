@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>STREAM_ID — player</title>
+<style>
+  body{font-family:system-ui, -apple-system,Segoe UI,Roboto,Arial; background:#071129;color:#fff;margin:0;display:flex;align-items:center;justify-content:center;height:100vh}
+  .card{background:rgba(255,255,255,0.03);padding:22px;border-radius:12px;max-width:560px;width:96%}
+  h1{margin:0 0 8px;font-size:1.25rem}
+  .meta{color:#cbd5e1;font-size:.95rem;margin-bottom:12px}
+  audio{width:100%}
+  a.back{display:inline-block;margin-top:12px;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:8px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>DISPLAY_NAME</h1>
+    <div class="meta">DESCRIPTION<br>Mount: <strong>/STREAM_ID</strong> · Listeners: <strong>LISTENERS</strong></div>
+
+    <audio controls preload="none">
+      <source src="http://in.icss.com.gr:8000/stream_034" type="audio/mpeg" />
+      Ο περιηγητής σας δεν υποστηρίζει το στοιχείο audio.
+    </audio>
+
+    <div style="margin-top:10px;font-size:.9rem;color:#dbeafe">
+      Bitrate: 192 kbps
+    </div>
+
+    <a class="back" href="../">← Back to index</a>
+  </div>
+</body>
+</html>
