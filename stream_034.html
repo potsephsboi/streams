@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ακούτε — Ι.Ν. Αγ. Ελευθερίου Άρεως, Αθήνα</title>
+  <style>
+    :root {
+      --bg1: #0f172a;
+      --bg2: #071129;
+      --card: rgba(255,255,255,0.06);
+      --accent: #eab308;
+      --glass: rgba(255,255,255,0.03);
+    }
+    html,body{height:100%;margin:0;font-family: "Helvetica Neue", Arial, sans-serif;color:#fff}
+    body{
+      background: linear-gradient(160deg, var(--bg1) 0%, var(--bg2) 60%);
+      -webkit-font-smoothing:antialiased;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+    }
+
+    .card{
+      width:min(920px, 96%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px;
+      box-shadow: 0 8px 40px rgba(2,6,23,0.7);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:0;
+      align-items:stretch;
+    }
+
+    .left {
+      padding:32px;
+      background-image: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+
+    .station-title{
+      font-size:1.6rem;
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+
+    .subtitle{
+      color: #dbeafe;
+      opacity:.9;
+      margin-top:2px;
+      font-size:0.98rem;
+    }
+
+    .desc{
+      margin-top:14px;
+      color:#cbd5e1;
+      line-height:1.55;
+      font-size:0.98rem;
+    }
+
+    .meta{
+      margin-top:auto;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .pill{
+      background:var(--glass);
+      border-radius:999px;
+      padding:8px 12px;
+      font-size:0.92rem;
+      color:#e6eef8;
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+    }
+
+    .right{
+      padding:28px;
+      background:
+        linear-gradient(180deg, rgba(14,25,40,0.18), rgba(6,12,22,0.12)),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400"><rect fill="%23000000" width="400" height="400" fill-opacity="0"/></svg>');
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .audio-box{
+      width:100%;
+      max-width:320px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      align-items:stretch;
+    }
+
+    audio { width:100%; border-radius:8px; background: transparent; outline:none; }
+
+    .listen-hint{
+      font-size:0.9rem;
+      color:#cbd5e1;
+      opacity:.9;
+      text-align:center;
+    }
+
+    .back{
+      margin-top:6px;
+      font-size:0.9rem;
+      text-decoration:none;
+      color:#fff;
+      padding:8px 14px;
+      border-radius:10px;
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.06);
+    }
+
+    .logo{
+      width:64px;height:64px;border-radius:10px;background:linear-gradient(180deg,var(--accent),#f59e0b);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#111;font-size:1.1rem;
+      box-shadow:0 6px 18px rgba(234,179,8,0.14);
+    }
+
+    @media (max-width:880px){
+      .card { grid-template-columns: 1fr; }
+      .right { padding:20px; }
+      .left { padding:20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <section class="left" aria-labelledby="stationHeading">
+      <div style="display:flex;gap:14px;align-items:center">
+        <div class="logo" aria-hidden="true">ΙΝ</div>
+        <div>
+          <h1 id="stationHeading" class="station-title">Ι.Ν. Αγ. Ελευθερίου — Άρεως, Αθήνα</h1>
+          <div class="subtitle">Ζωντανή μετάδοση | Εκκλησιαστική ροή</div>
+        </div>
+      </div>
+
+      <p class="desc">
+        Ακούτε ζωντανά την μετάδοση από τον ιερό ναό Αγίου Ελευθερίου στην πλατεία Άρεως (Αθήνα).
+        Στην ίδια σελίδα μπορείτε να συνδεθείτε στον ήχο, να δείτε βασικές πληροφορίες και να κλείσετε το παράθυρο όταν τελειώσετε.
+      </p>
+
+      <div class="meta" aria-hidden="false">
+        <span class="pill">Πηγή: in.icss.com.gr</span>
+        <span class="pill">Mount: /stream_034</span>
+        <span class="pill">Μορφή: MP3</span>
+      </div>
+
+      <p class="desc" style="margin-top:10px;font-size:0.92rem;color:#dbeafe">
+        Σημείωση: Αν ο ήχος δεν παίζει, δοκιμάστε να ανοίξετε την προέλευση (π.χ. σε VLC) ή ελέγξτε την πολιτική mixed-content (HTTPS σελίδα μπορεί να μπλοκάρει HTTP stream).
+      </p>
+    </section>
+
+    <aside class="right" aria-label="Player controls">
+      <div style="width:100%;max-width:340px;text-align:center;">
+        <div style="font-weight:700;margin-bottom:6px">Ακούστε τώρα</div>
+        <div class="audio-box">
+          <audio id="player" controls preload="none">
+            <source src="http://in.icss.com.gr:8000/stream_034" type="audio/mpeg" />
+            Ο περιηγητής σας δεν υποστηρίζει το στοιχείο audio.
+          </audio>
+          <div class="listen-hint">
+            Πατήστε το ▶ για να ξεκινήσει η ροή. (Autoplay μπορεί να μπλοκαριστεί από τον browser.)
+          </div>
+          <a class="back" href="index.html" title="Επιστροφή στην αρχική">← Επιστροφή</a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    // small UX nicety: if user clicks the page once, focus the audio control (makes mobile play easier)
+    document.body.addEventListener('click', function(e){
+      const a = document.getElementById('player');
+      if (!a) return;
+      // don't steal focus if clicking controls or links
+      if (e.target.closest('audio') || e.target.closest('a')) return;
+      a.focus({preventScroll:true});
+    }, {capture:false});
+  </script>
+</body>
+</html>
